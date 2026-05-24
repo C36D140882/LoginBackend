@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-l%yf7^31m^mr55aub7w5f^#g6@rdgn_eh@n_tpiyd27u#6h44^'
 
-DEBUG = os.getenv("DEBUG") == "True"
+DEBUG = os.getenv("DEBUG",'Flase') == "True"
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS","127.0.0.1,localhost").split(",")
 
@@ -87,7 +87,8 @@ load_dotenv()
 
 DATABASES = {
     "default": dj_database_url.parse(
-        os.getenv("DATABASE_URL")
+        os.getenv("DATABASE_URL"),
+        conn_max_age=600
     )
 }
 
@@ -125,8 +126,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
-
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
