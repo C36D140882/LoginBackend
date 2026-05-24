@@ -1,0 +1,247 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# Django
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+migrations
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Authentication & Tokens
+*.key
+*.pem
+*.crt
+*.csr
+*.priv
+*.pub
+secret.key
+oauth_token.json
+*.token
+
+# Database
+*.db
+*.sqlite3
+*.sqlite
+*.sql
+*.mdb
+*.accdb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-*
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+.coverage
+.coverage.*
+.htmlcov/
+.tox/
+.pytest_cache/
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+*.cover
+*.py,cover
+nosetests.xml
+coverage.xml
+*.cover
+test.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Uploads/Media
+media/
+uploads/
+staticfiles/
+static_root/
+media_root/
+
+# Logs
+logs/
+*.log
+logfile.log
+debug.log
+error.log
+
+# Cache
+*.cache
+*.egg-info/
+*.egg
+.python-version
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.mypy_cache/
+.ruff_cache/
+__pycache__/
+*.pyc
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+*.pid
+
+# Virtual Environment
+venv/
+.virtualenv/
+virtualenv/
+.env/
+.venv/
+venv.bak/
+env.bak/
+
+# Docker
+.docker/
+docker-compose.override.yml
+docker-compose.*.yml
+!.docker/compose.yml
+
+# Redis
+dump.rdb
+
+# PostgreSQL
+*.pgdata/
+pgdata/
+*.pgdump
+
+# MySQL
+*.sql
+*.dump
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+*.temp
+*.orig
+
+# Package management
+pip-log.txt
+pip-delete-this-directory.txt
+pip-selfcheck.json
+poetry.lock
+poetry.toml
+requirements.txt
+!requirements/base.txt
+!requirements/dev.txt
+!requirements/prod.txt
+
+# Node.js (if using for frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.webpack/
+
+# Compiled files
+*.pyo
+*.pyd
+*.so
+*.dll
+*.dylib
+
+# Migrations (uncomment if you want to ignore migration files)
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# Environment-specific
+*.local.py
+*.dev.py
+*.prod.py
+*.staging.py
+settings_local.py
+
+# Secrets
+secrets.json
+secrets.yaml
+config/secrets.yml
+*.secret
+
+# API keys
+*.api.key
+api_keys.json
+credentials.json
+client_secret*.json
+
+# Sentry
+.sentry/
+
+# Pre-commit
+.pre-commit-config.yaml
+
+# Bandit
+.bandit
+
+# Flake8
+.flake8
+
+# mypy
+.mypy_cache/
+
+# pytest
+.pytest_cache/
+
+# Django migrations backup
+*.sqlite3-journal
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Linux
+.directory
+*.directory
+
+# Project specific (customize as needed)
+*.pkl
+*.h5
+*.keras
+*.pb
+*.onnx
+*.joblib
+.django_secret_key.txt
