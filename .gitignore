@@ -155,7 +155,6 @@ pip-delete-this-directory.txt
 pip-selfcheck.json
 poetry.lock
 poetry.toml
-requirements.txt
 !requirements/base.txt
 !requirements/dev.txt
 !requirements/prod.txt
